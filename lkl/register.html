@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+	.input-password{
+		position: fixed;
+		left: 200;
+	}	
+	
+	.input-password1{
+		position: fixed;
+		left: 300;
+	}	
+	#avatar{
+		position: fixed;
+		left: 500;
+		top:200;
+		
+	}
+</style>
+
+</head>
+<body style="background-color:black" background="pozadina.jpg">
+
+
+	<div class="container">
+      <?php if(isset($smsg)){ ?><div  role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+      <?php if(isset($fmsg)){ ?><div  role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
+      <form  method="POST">
+
+        <div id="formW">
+		<center><br/><br/><br/><br/><br/><br/><br/><br/>
+        <h2 class="input-password" >Please Register</h2><br/><br/><br/><br/>
+		<span  id="basic-addon1" class="input-password">Username<br></span><br/>
+		<input type="text" name="username" class="input-password"  placeholder="Username" required><br/>
+		
+		<label for="inputFname" class="input-password"><br/>First name<br/></label><br/><br/>
+		<input type="text" name="Fname" class="input-password" placeholder="First name" required><br/>
+		
+		<label for="inputLname" class="input-password"><br/>Last name<br/></label><br/><br/>
+		<input type="text" name="Lname" class="input-password" placeholder="Last name" required><br/>
+
+        <label for="inputEmail" class="input-password" ><br/>Email address<br/></label><br/><br/>
+        <input type="email" name="email" id="inputEmail" class="input-password" placeholder="Email address" required autofocus><br/>
+		
+		<label for="inputDOB" class="input-password"> <br/>Date of birth<br/></label><br/><br/>
+        <input type="text" name="dob" class="input-password" placeholder="DD/MM/YYYY" required><br/>		
+		
+		<label for="inputAddress" class="input-password"><br/>Address<br/></label><br/><br/>
+		<input type="text" name="adresa" class="input-password" placeholder="Address" required><br/>
+        
+		
+		<label for="inputPassword" class="input-password">	<br/>Password<br/></label><br/><br/>
+        <input type="password" name="password" id="inputPassword" class="input-password" placeholder="Password" required><br/><br/><br/>
+		
+		<div id="avatar"><br>
+		 <label for="inputEmail"  ><br/>Avatar <br/></label><br/><br/>
+		 <form name="avatar">
+			<input type="radio"  value="imgs/shaq.png" checked> shaq<br>
+			<input type="radio"  value="imgs/big.png"> big<br>
+			<input type="radio"  value="imgs/rick.png"> rick<br>
+			<input type="radio"  value="imgs/pewds.png"> pewds<br>
+			<input type="radio"  value="imgs/ainsley.png"> ainsley
+		</form>
+		</div>
+        <button  type="submit" class="input-password">Register</button>
+        <a  href="login.html" class="input-password1">Login</a>
+      
+	  </form>
+		</div>
+	  </div>
+	
+</div>
+</body>
+</html>	

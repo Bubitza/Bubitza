@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Login Page</title>
+<style>
+	.input-password{
+		position: fixed;
+		left: 200;
+	}	
+	
+	.input-password1{
+		position: fixed;
+		left: 300;
+	}	
+</style>
+
+</head>
+<body style="background-color:black" background="pozadina.jpg">
+
+	
+	  
+	<div class="container">
+      <?php if(isset($smsg)){ ?><div  role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+      <?php if(isset($fmsg)){ ?><div  role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
+	  	  
+		  
+      <form  method="POST" >
+        
+        <div id="formW">
+		<center><br><br><br><br><br><br><br><br>
+			<h2 class="input-password" >Login</h2><br><br><br><br>
+		  <span  id="basic-addon1" class="input-password">Username<br/></span><br><br>
+		  <input type="text" name="username" class="input-password" placeholder="Username" required>
+
+        <label for="inputPassword" class="input-password" ><br/><br/>Password<br/></label><br><br><br><br>
+        <input type="password" name="password" class="input-password"  placeholder="Password" required><br>
+		<br/>
+        <button  type="submit" class="input-password" action="home.php" >Login</button>
+        <a  href="register.html" class="input-password1">Register</a>
+		</div>
+
+
+	
+</div>
+</body>
+</html>	
