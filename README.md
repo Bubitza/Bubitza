@@ -1,7 +1,6 @@
 - 👋 Hi, I’m Bruno
-- 👀 I’m interested in frontend web development
-- 🌱 I’m currently learning HTML, CSS, JavaScript and Mongo over Udemy
-- 💞️ I’m looking to collaborate on ...
+- 👀 I’m interested in front-end web development
+- 🌱 I’m currently learning HTML, CSS, JavaScript and Mongo over Udemy 
 - 📫 How to reach me? 
      My email is tan.one12@gmail.com
 
